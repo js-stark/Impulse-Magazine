@@ -1,0 +1,76 @@
+
+
+.body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section{
+    
+    background: url(../images/aboutus.jpg) no-repeat left;
+    background-size: cover;
+    background-position: center;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+
+}
+
+.inner-container{
+    box-sizing: border-box;
+    width: 45%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 140px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 00;
+    font-size: 15px;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 115px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 120px;
+        width: 100%;
+    }
+}

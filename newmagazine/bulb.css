@@ -1,0 +1,1223 @@
+.envelope{visibility: hidden;}
+body.on .envelope{
+    display: flex;
+    visibility: visible;
+    z-index: 3;
+    margin: 0%;padding: 0;
+    transition: all 3s ease-in;
+}
+
+body.on #etop{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    margin: 0%;padding: 0;
+    background:rgb(212, 66, 66);
+    width: 100%;
+    height: 30px;
+    top: 0%;
+    left: 0%;
+    border-top: 5px solid rgb(214, 214, 214);
+    z-index: 3;
+    transition: all 1s ease-in;
+    
+}
+body.on  #eleft{
+    position: fixed;
+    margin: 0%;padding: 0;
+    background:rgb(212, 66, 66);
+    width: 30px;
+    height: 100vh;
+    left: 0%;
+    top: 0%;
+    border-left: 5px solid rgb(214, 214, 214);
+    border-top: 5px solid rgb(214, 214, 214);
+    border-bottom: 5px solid rgb(214, 214, 214);
+    z-index: 4;
+    transition: all 1s ease-in;
+}
+body.on #eright{
+    position: fixed;
+    margin: 0%;padding: 0;
+    background:rgb(212, 66, 66);
+    width: 30px;
+    height: 100vh;
+    right: 0%;
+    top: 0%;
+    border-right: 5px solid rgb(214, 214, 214);
+    border-top: 5px solid rgb(214, 214, 214);
+    border-bottom: 5px solid rgb(214, 214, 214);
+    z-index: 4;
+    transition: all 1s ease-in;
+}
+body.on #ebott{
+    position: fixed;
+    margin: 0%;padding: 0;
+    background:rgb(212, 66, 66);
+    width: 100%;
+    height: 30px;
+    bottom: 0%;
+    left: 0%;
+    border-bottom: 5px solid rgb(214, 214, 214);
+    z-index: 3;
+    transition: all 1s ease-in;
+}
+#bulb1{
+    display: none;
+}
+#etop > .bulb1{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 5%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 2s ease-in;
+    z-index: 10;
+}
+.envelope   #etop > #bulb1 + .bulb1{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    transition: all 2s ease-in;
+}
+.envelope  #etop > #bulb1 + .bulb1::before{
+    border-top-color: #ffdf42;
+}
+#etop > #bulb2{
+    display: none;
+}
+#etop > .bulb2{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 10%;
+    top: 2px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    z-index: 10;
+}
+body.on  .envelope #etop > #bulb2 + .bulb2{
+    background: white;
+    box-shadow: 0px 0px 50px 20px white;
+    animation: glow 4s  linear forwards;
+}
+@keyframes glow{
+    0%,90%{
+        background: none;
+        box-shadow: 0px 0px 0px 0px white;
+    }
+    90.1%,100%{
+        background: white;
+        box-shadow: 0px 0px 80px 20px white;
+    }
+}
+body.on  .envelope #etop > #bulb2 + .bulb2::before{
+    border-top-color: #ffdf42;
+}
+#etop > #bulb3{
+    display: none;
+}
+#etop > .bulb3{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 20%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.1s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #etop > #bulb3 + .bulb3{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.1s ease-in; */
+    animation: glow 6s  linear forwards;
+}
+body.on  .envelope #etop > #bulb3 + .bulb3::before{
+    border-top-color: #ffdf42;
+}
+#etop > #bulb4{
+    display: none;
+}
+#etop > .bulb4{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 30%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.2s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #etop > #bulb4 + .bulb4{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.2s ease-in; */
+    animation: glow 6.2s  linear forwards
+}
+body.on  .envelope #etop > #bulb4 + .bulb4::before{
+    border-top-color: #ffdf42;
+}
+#etop > #bulb5{
+    display: none;
+}
+#etop > .bulb5{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 40%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.3s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #etop > #bulb5 + .bulb5{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.3s ease-in; */
+    animation: glow 6.3s  linear forwards
+}
+body.on  .envelope #etop > #bulb5 + .bulb5::before{
+    border-top-color: #ffdf42;
+}
+#etop > #bulb6{
+    display: none;
+}
+#etop > .bulb6{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 50%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.4s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #etop > #bulb6 + .bulb6{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.4s ease-in; */
+    animation: glow 6.4s  linear forwards
+}
+body.on  .envelope #etop > #bulb6 + .bulb6::before{
+    border-top-color: #ffdf42;
+}
+#etop > #bulb7{
+    display: none;
+}
+#etop > .bulb7{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 60%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.5s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #etop > #bulb7 + .bulb7{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.5s ease-in; */
+    animation: glow 6.5s  linear forwards
+}
+body.on  .envelope #etop > #bulb7 + .bulb7::before{
+    border-top-color: #ffdf42;
+}
+#etop > #bulb8{
+    display: none;
+}
+#etop > .bulb8{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 70%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.6s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #etop > #bulb8 + .bulb8{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.6s ease-in; */
+    animation: glow 6.6s  linear forwards
+}
+body.on  .envelope #etop > #bulb8 + .bulb8::before{
+    border-top-color: #ffdf42;
+}
+#etop > #bulb9{
+    display: none;
+}
+#etop > .bulb9{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 80%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.7s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #etop > #bulb9 + .bulb9{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.7s ease-in; */
+    animation: glow 6.7s  linear forwards
+}
+body.on  .envelope #etop > #bulb9 + .bulb9::before{
+    border-top-color: #ffdf42;
+}
+#etop > #bulb10{
+    display: none;
+}
+#etop > .bulb10{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 90%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.8s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #etop > #bulb10 + .bulb10{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.8s ease-in; */
+    animation: glow 6.8s  linear forwards
+}
+body.on  .envelope #etop > #bulb10 + .bulb10::before{
+    border-top-color: #ffdf42;
+}
+
+/* BOTTOM */
+
+
+#ebott >#bulb1{
+    display: none;
+}
+#ebott > .bulb1{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 5%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    /* transition: all 3.8s ease-in; */
+    z-index: 10;
+}
+body.on  .envelope   #ebott > #bulb1 + .bulb1{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.8s ease-in; */
+    animation: glow 4s  linear forwards;
+}
+body.on  .envelope  #ebott > #bulb1 + .bulb1::before{
+    border-top-color: #ffdf42;
+}
+#ebott > #bulb2{
+    display: none;
+}
+#ebott > .bulb2{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 10%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    /* transition: all 3.7s ease-in; */
+    z-index: 10;
+}
+body.on  .envelope #ebott > #bulb2 + .bulb2{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.7s ease-int; */
+    animation: glow 6.7s  linear forwards;
+}
+body.on  .envelope #ebott > #bulb2 + .bulb2::before{
+    border-top-color: #ffdf42;
+}
+#ebott > #bulb3{
+    display: none;
+}
+#ebott > .bulb3{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 20%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.6s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #ebott > #bulb3 + .bulb3{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.6s ease-in; */
+    animation: glow 6.6s  linear forwards;
+}
+body.on  .envelope #ebott > #bulb3 + .bulb3::before{
+    border-top-color: #ffdf42;
+}
+#ebott > #bulb4{
+    display: none;
+}
+#ebott > .bulb4{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 30%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.5s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #ebott > #bulb4 + .bulb4{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.5s ease-in; */
+    animation: glow 6.5s  linear forwards;
+}
+body.on  .envelope #ebott > #bulb4 + .bulb4::before{
+    border-top-color: #ffdf42;
+}
+#ebott > #bulb5{
+    display: none;
+}
+#ebott > .bulb5{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 40%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.4s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #ebott > #bulb5 + .bulb5{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.4s ease-in; */
+    animation: glow 6.4s  linear forwards;
+}
+body.on  .envelope #ebott > #bulb5 + .bulb5::before{
+    border-top-color: #ffdf42;
+}
+#ebott > #bulb6{
+    display: none;
+}
+#ebott > .bulb6{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 50%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.3s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #ebott > #bulb6 + .bulb6{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.3s ease-in; */
+    animation: glow 6.3s  linear forwards;
+}
+body.on  .envelope #ebott > #bulb6 + .bulb6::before{
+    border-top-color: #ffdf42;
+}
+#ebott > #bulb7{
+    display: none;
+}
+#ebott > .bulb7{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 60%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.2s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #ebott > #bulb7 + .bulb7{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.2s ease-in; */
+    animation: glow 6.2s  linear forwards;
+}
+body.on  .envelope #ebott > #bulb7 + .bulb7::before{
+    border-top-color: #ffdf42;
+}
+#ebott > #bulb8{
+    display: none;
+}
+#ebott > .bulb8{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 70%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.1s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #ebott > #bulb8 + .bulb8{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.1s ease-in; */
+    animation: glow 6.1s  linear forwards;
+}
+body.on  .envelope #ebott > #bulb8 + .bulb8::before{
+    border-top-color: #ffdf42;
+}
+#ebott > #bulb9{
+    display: none;
+}
+#ebott > .bulb9{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 80%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #ebott > #bulb9 + .bulb9{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3s ease-in; */
+    animation: glow 6s  linear forwards;
+}
+body.on  .envelope #ebott > #bulb9 + .bulb9::before{
+    border-top-color: #ffdf42;
+}
+#ebott > #bulb10{
+    display: none;
+}
+#ebott > .bulb10{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 90%;
+    top: 2px;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 2s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #ebott > #bulb10 + .bulb10{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 2s ease-in; */
+    animation: glow 4s  linear forwards;
+}
+body.on  .envelope #ebott > #bulb10 + .bulb10::before{
+    border-top-color: #ffdf42;
+}
+
+
+
+
+
+/* LEFT */
+#eleft > #bulb1{
+    display: none;
+}
+#eleft > .bulb1{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 2px;
+    top: 2%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 2s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eleft > #bulb1 + .bulb1{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 2s ease-in; */
+    animation: glow 6.9s  linear forwards;
+}
+body.on  .envelope #eleft > #bulb1 + .bulb1::before{
+    border-top-color: #ffdf42;
+}
+#eleft > #bulb2{
+    display: none;
+}
+#eleft > .bulb2{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 2px;
+    top: 10%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eleft > #bulb2 + .bulb2{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3s ease-in; */
+    animation: glow 6.8s  linear forwards;
+}
+body.on  .envelope #eleft > #bulb2+ .bulb2::before{
+    border-top-color: #ffdf42;
+}
+#eleft > #bulb3{
+    display: none;
+}
+#eleft > .bulb3{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 2px;
+    top: 20%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.1s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eleft > #bulb3 + .bulb3{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.1s ease-in; */
+    animation: glow 6.7s  linear forwards;
+}
+body.on  .envelope #eleft > #bulb3 + .bulb3::before{
+    border-top-color: #ffdf42;
+}
+#eleft > #bulb4{
+    display: none;
+}
+#eleft > .bulb4{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 2px;
+    top: 30%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.2s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eleft > #bulb4 + .bulb4{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.2s ease-in; */
+    animation: glow 6.6s  linear forwards;
+}
+body.on  .envelope #eleft > #bulb4 + .bulb4::before{
+    border-top-color: #ffdf42;
+}
+#eleft > #bulb5{
+    display: none;
+}
+#eleft > .bulb5{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 2px;
+    top: 40%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.3s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eleft > #bulb5 + .bulb5{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.3s ease-in; */
+    animation: glow 6.5s  linear forwards;
+}
+body.on  .envelope #eleft > #bulb5 + .bulb5::before{
+    border-top-color: #ffdf42;
+}
+#eleft > #bulb6{
+    display: none;
+}
+#eleft > .bulb6{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 2px;
+    top: 50%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.6 ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eleft > #bulb6 + .bulb6{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.4s ease-in; */
+    animation: glow 6.4s  linear forwards;
+}
+body.on  .envelope #eleft > #bulb6 + .bulb6::before{
+    border-top-color: #ffdf42;
+}
+#eleft > #bulb7{
+    display: none;
+}
+#eleft > .bulb7{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 2px;
+    top: 60%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.5s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eleft > #bulb7 + .bulb7{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.5s ease-in; */
+    animation: glow 6.3s  linear forwards;
+}
+body.on  .envelope #eleft > #bulb7 + .bulb7::before{
+    border-top-color: #ffdf42;
+}
+#eleft > #bulb8{
+    display: none;
+}
+#eleft > .bulb8{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 2px;
+    top: 70%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.6s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eleft > #bulb8 + .bulb8{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.6s ease-in; */
+    animation: glow 6.2s  linear forwards;
+}
+body.on  .envelope #eleft > #bulb8 + .bulb8::before{
+    border-top-color: #ffdf42;
+}
+#eleft > #bulb9{
+    display: none;
+}
+#eleft > .bulb9{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 2px;
+    top: 80%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.7s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eleft > #bulb9 + .bulb9{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.7s ease-in; */
+    animation: glow 6.1s  linear forwards;
+}
+body.on  .envelope #eleft > #bulb9 + .bulb9::before{
+    border-top-color: #ffdf42;
+}
+#eleft > #bulb10{
+    display: none;
+}
+#eleft > .bulb10{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 2px;
+    top: 90%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.8s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eleft > #bulb10 + .bulb10{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.8s ease-in; */
+    animation: glow 6s  linear forwards;
+}
+body.on  .envelope #eleft > #bulb10 + .bulb10::before{
+    border-top-color: #ffdf42;
+}
+#eleft > #bulb11{
+    display: none;
+}
+#eleft > .bulb11{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 2px;
+    top: 98%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.9s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eleft > #bulb11 + .bulb11{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.9s ease-in; */
+    animation: glow 4s  linear forwards;
+}
+body.on  .envelope #eleft > #bulb11 + .bulb11::before{
+    border-top-color: #ffdf42;
+}
+
+
+
+
+
+/* RIGHT */
+#eright > #bulb1{
+    display: none;
+}
+#eright > .bulb1{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: 2px;
+    top: 2%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.9s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eright > #bulb1 + .bulb1{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.9s ease-in; */
+    animation: glow 4s  linear forwards;
+}
+body.on  .envelope #eright > #bulb1 + .bulb1::before{
+    border-top-color: #ffdf42;
+}
+#eright > #bulb2{
+    display: none;
+}
+#eright > .bulb2{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: 2px;
+    top: 10%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.8s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eright > #bulb2 + .bulb2{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.8s ease-in; */
+    animation: glow 6s  linear forwards;
+}
+body.on  .envelope #eright > #bulb2+ .bulb2::before{
+    border-top-color: #ffdf42;
+}
+#eright > #bulb3{
+    display: none;
+}
+#eright > .bulb3{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: 2px;
+    top: 20%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.7s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eright > #bulb3 + .bulb3{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.7s ease-in; */
+    animation: glow 6.1s  linear forwards;
+}
+body.on  .envelope #eright > #bulb3 + .bulb3::before{
+    border-top-color: #ffdf42;
+}
+#eright > #bulb4{
+    display: none;
+}
+#eright > .bulb4{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: 2px;
+    top: 30%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.6s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eright> #bulb4 + .bulb4{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.6s ease-in; */
+    animation: glow 6.2s  linear forwards;
+}
+body.on  .envelope #eright > #bulb4 + .bulb4::before{
+    border-top-color: #ffdf42;
+}
+#eright> #bulb5{
+    display: none;
+}
+#eright > .bulb5{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: 2px;
+    top: 40%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.5s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eright > #bulb5 + .bulb5{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.5s ease-in; */
+    animation: glow 6.3s  linear forwards;
+}
+body.on  .envelope #eright > #bulb5 + .bulb5::before{
+    border-top-color: #ffdf42;
+}
+#eright > #bulb6{
+    display: none;
+}
+#eright > .bulb6{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: 2px;
+    top: 50%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.6 ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eright > #bulb6 + .bulb6{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.4s ease-in; */
+    animation: glow 6.4s  linear forwards;
+}
+body.on  .envelope #eright > #bulb6 + .bulb6::before{
+    border-top-color: #ffdf42;
+}
+#eright > #bulb7{
+    display: none;
+}
+#eright > .bulb7{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: 2px;
+    top: 60%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.3s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eright > #bulb7 + .bulb7{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.3s ease-in; */
+    animation: glow 6.5s  linear forwards;
+}
+body.on  .envelope #eright > #bulb7 + .bulb7::before{
+    border-top-color: #ffdf42;
+}
+#eright > #bulb8{
+    display: none;
+}
+#eright > .bulb8{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: 2px;
+    top: 70%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.2s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eright > #bulb8 + .bulb8{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.2s ease-in; */
+    animation: glow 6.6s  linear forwards;
+}
+body.on  .envelope #eright> #bulb8 + .bulb8::before{
+    border-top-color: #ffdf42;
+}
+#eright > #bulb9{
+    display: none;
+}
+#eright > .bulb9{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: 2px;
+    top: 80%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3.1s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eright> #bulb9 + .bulb9{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3.1s ease-in; */
+    animation: glow 6.7s  linear forwards;
+}
+body.on  .envelope #eright > #bulb9 + .bulb9::before{
+    border-top-color: #ffdf42;
+}
+#eright > #bulb10{
+    display: none;
+}
+#eright > .bulb10{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: 2px;
+    top: 90%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 3s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eright> #bulb10 + .bulb10{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 3s ease-in; */
+    animation: glow 6.8s  linear forwards;
+}
+body.on  .envelope #eright > #bulb10 + .bulb10::before{
+    border-top-color: #ffdf42;
+}
+#eright > #bulb11{
+    display: none;
+}
+#eright > .bulb11{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: 2px;
+    top: 98%;
+    /* transform: translate(-50%,-50%); */
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 2s ease-in;
+    z-index: 10;
+}
+body.on  .envelope #eright > #bulb11 + .bulb11{
+    background: #ffdf42;
+    box-shadow: 0px 0px 50px 20px rgba(255, 191, 17, 0.9);
+    /* transition: all 2s ease-in; */
+    animation: glow 6.9s  linear forwards;
+}
+body.on  .envelope #eright > #bulb11 + .bulb11::before{
+    border-top-color: #ffdf42;
+}
+
+body.off  .envelope #eright > #bulb1 + .bulb1{
+    box-shadow: 0px;
+    background: white;
+}

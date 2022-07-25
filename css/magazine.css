@@ -1,0 +1,499 @@
+/* All The Magazines Display */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #131313;
+}
+
+.contain{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d;
+}
+
+.contain .box{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    margin: 40px;
+    background: #232323;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+
+.contain .box::before{
+    content: 'IMPULSE';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 3em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+.contain .box::after{
+    content: 'Magazine';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 3em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.contain .box:hover::before,
+.contain .box:hover::after{
+    opacity: 0.04;
+}
+
+.contain .box .name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight:bolder;
+    font-size: 1.2rem;
+
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.contain .box:hover .name{
+    top: 40px;
+    opacity: 1;
+
+}
+
+.contain .box .read{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    color: #fff;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.contain .box:hover .read{
+    bottom: 30px;
+    opacity: 1;
+    /* transform: translateZ(200px) */
+}
+
+.contain .box .circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%,-50%,50px);
+}
+
+.contain .box .product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 230px;
+    transition: 0.5s;
+    z-index: 11;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,0px);
+}
+.contain .box:hover .product{
+    transform: translate3d(-50%,-50%,100px);
+}
+
+.contain .box:nth-child(1n) .circle,
+.contain .box:nth-child(1n) .read{
+    background: #379bf7;
+}
+.contain .box:nth-child(2n) .circle,
+.contain .box:nth-child(2n) .read{
+    background: #9bdc28;
+}
+.contain .box:nth-child(3n) .circle,
+.contain .box:nth-child(3n) .read{
+    background: #fb4b4f;
+}
+
+
+/* Magazine Card Section with content and Book preview */
+
+.card-body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #070c24;
+}
+
+.wrapper{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    height: 600px;
+    background: #fff;
+    margin: 20px;
+}
+
+.wrapper .imgBx{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background: #006dbc;
+}
+
+/* .wrapper .imgBx:before{
+    content: 'Impulse';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    color: #000;
+    opacity: 0.2;
+    font-size: 6em;
+    font-weight: 800;
+    cursor: pointer;
+
+} */
+
+.wrapper .imgBx img{
+    position: relative;
+    width: 500px;
+    height: 600px;
+    transform: rotate(-30deg);
+    left: -50px;
+}
+
+.wrapper .details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.wrapper .details h2{
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    line-height: 0.8em;
+    color: #444;
+}
+
+.wrapper .details h2 span{
+    font-size: 0.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+.wrapper .details p{
+    max-width: 85%;
+    margin-left: 15%;
+    color: #333;
+    font-size: 15px;
+}
+
+.wrapper .details h3{
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    color: #a2a2a2;
+    float: left;
+}
+
+.wrapper .details button{
+    background: #006dbc;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 40px;
+    float: right;
+}
+
+.wrapper .details button:hover{
+    background: #0013bc;
+}
+
+/* IMPULSE 2020 ed1*/
+
+.t20 .book:before{
+    content: '';
+    background: url("../images/magazine/IM2020ed1/cover/border.jpg");
+}
+.t20 .book:after{
+    content: '';
+    background: url("../images/magazine/IM2020ed1/cover/back.jpg");
+}
+/* IMPULSE 2020 ed2*/
+
+.t20ed2 .book:before{
+    content: '';
+    background: url("../images/magazine/IM2020ed2/cover/border.jpg");
+}
+.t20ed2 .book:after{
+    content: '';
+    background: url("../images/magazine/IM2020ed2/cover/back.jpg");
+}
+/* IMPULSE 2020 ed3*/
+
+.t20ed3 .book:before{
+    content: '';
+    background: url("../images/magazine/IM2020ed3/cover/border.jpg");
+}
+.t20ed3 .book:after{
+    content: '';
+    background: url("../images/magazine/IM2020ed3/cover/back.jpg");
+}
+/* IMPULSE 2021 ed1*/
+
+.t21ed1 .book:before{
+    content: '';
+    background: url("../images/magazine/IM2021ed1/cover/border.jpg");
+}
+.t21ed1 .book:after{
+    content: '';
+    background: url("../images/magazine/IM2021ed1/cover/back.jpg");
+}
+
+
+/* SEction for Adiing the images into the Magazine */
+
+
+/* *************************************************************************** */
+
+.magazine{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform: translateY(-1%) translateX(-50%);
+}
+  
+.magazine .book{
+    position: relative;
+    width: 340px;
+    height: 490px;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    transform: rotateY(35deg);
+}
+
+.magazine .book:hover{
+    transform: rotateY(150deg);
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+}
+
+.magazine .book:active{
+    transform: rotateY(180deg);
+}
+
+.magazine .book:before{
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    transform-origin: left;
+    background-position: center;
+    background-size: 100% 100%;
+    transform: rotateY(90deg);
+}
+.magazine .book:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+
+    background-position: center;
+    background-size: 100% 100%;
+    background-position: center;
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.magazine .book img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* *************************************************************************** */
+
+
+
+
+
+
+/* Responsive Design */
+
+@media (max-width:1080px){
+    .wrapper{
+        height: auto;
+    }
+
+    .wrapper .imgBx{
+        padding: 40px;
+        min-height: 700px;
+        box-sizing: border-box;
+        width: 100% !important;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .magazine{
+        transform: translateY(-30%) translateX(-8%);
+        position: absolute;
+    }
+
+
+    .wrapper .imgBx img{
+        left: initial;
+        max-width: 100%;
+        transform: rotate(0deg);
+    }
+
+    .details{
+        width: 100% !important;
+        height: auto;
+        padding: 20px;
+    }
+
+    .wrapper .details p{
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width:720px){
+
+    .wrapper .imgBx{
+        min-height: 700px;
+
+    }
+    .magazine{
+        transform: translateY(-38%)  scale(1.1);
+        position: absolute;
+    }
+
+}
+@media (max-width:540px){
+
+    .wrapper .imgBx{
+        min-height: 600px;
+
+    }
+    .magazine{
+        transform: translateY(-45%);
+        position: absolute;
+    }
+
+}
+@media (max-width:450px){
+    .wrapper .imgBx{
+        min-height: 500px;
+
+    }
+    .magazine{
+        transform: translateY(-60%)  scale(0.8);
+        position: absolute;
+    }
+
+}
+@media (max-width:412px){
+    .wrapper .imgBx{
+        min-height: 500px;
+
+    }
+    .magazine{
+        transform: translateY(-68%)  scale(0.8);
+        position: absolute;
+    }
+
+}
+@media (max-width:375px){
+    .wrapper .imgBx{
+        min-height: 400px;
+
+    }
+    .magazine{
+        transform: translateY(-88%) scale(0.6);
+        position: absolute;
+    }
+
+}
+@media (max-width:315px){
+    .wrapper .imgBx{
+        min-height: 400px;
+
+    }
+    .magazine{
+        transform: translateY(-78%) scale(0.6);
+        position: absolute;
+    }
+
+}
+
+
